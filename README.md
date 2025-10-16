@@ -8,7 +8,7 @@ This project develops a quantitative framework applying **data preprocessing, vi
 
 ---
 
-## 📦 Repository Structure
+## Repository Structure
 ```
 climate-co2-prediction/
 ├── data/
@@ -24,7 +24,7 @@ climate-co2-prediction/
 └── README.md
 ```
 
-## 🔬 Methodology
+## Methodology
 - **Model**: ARIMA(1,1,1) (p=1, d=1, q=1)
 - **Pipeline**:
   1. Data loading & preprocessing (date parsing, frequency inference, missing value handling)
@@ -33,13 +33,13 @@ climate-co2-prediction/
   4. Model fitting and multi-step forecasting
   5. Evaluation with MSE and visual comparison
 
-## 📊 Results (Reported)
+## Results (Reported)
 - **MSE**: *≈ 0.57* on the evaluation split
 - Visual inspection shows the forecast tracks the underlying seasonal-trend structure (see `results/forecast_plot.png` after running).
 
 > Note: Your exact score may differ depending on the chosen split and any additional preprocessing.
 
-## 🧰 Installation
+## Installation
 Create a virtual environment and install dependencies:
 ```bash
 python -m venv .venv
@@ -51,7 +51,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## ▶️ Quick Start
+## Quick Start
 Run the ARIMA script directly (adjust column names as needed):
 ```bash
 python src/model_arima.py   --data_path data/co2.csv   --date_col date   --value_col co2   --order 1 1 1   --test_size 0.2
@@ -67,19 +67,19 @@ Outputs (created under `results/`):
 - If your dataset is monthly but lacks an explicit frequency, the script will infer it (defaults to `MS`).
 - For alternative ARIMA orders, change `--order p d q`.
 
-## 🗂️ Dataset
+## Dataset
 - Time coverage: **1958–2001** (2,284 observations)  
 - File: `data/co2.csv`  
 - Please cite or reference the original data provider if applicable.
 
-## 🚀 Future Work
+## Future Work
 - Add **seasonal ARIMA (SARIMA)** with seasonal order search
 - Robust **model selection** via information criteria grid search
 - **Exogenous regressors (ARIMAX)** using climate covariates
 - **Residual diagnostics** and formal stationarity tests in code
 - Reproducible **conda environment** and CI workflow
 
-## 📝 Citation
+## Citation
 If you use this repository in academic work, please cite it as:
 ```
 Cris Wang. Climate Change and CO₂ Level Prediction (ARIMA). GitHub repository, 2025.
