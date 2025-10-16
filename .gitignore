@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Data files that shouldn't be tracked (uncomment if needed)
+# data/*.parquet
+# data/*.zip
+# data/raw/
+
+# Cache
+.cache/
+*.cache/
+# Results artifacts
+results/*.png
+results/*.json
+results/*.csv
