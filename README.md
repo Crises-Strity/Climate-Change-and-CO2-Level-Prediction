@@ -20,6 +20,7 @@ climate-co2-prediction/
 ├── results/                      # Auto-generated: metrics, plots, forecasts
 ├── requirements.txt
 ├── .gitignore
+├── LICENCE
 └── README.md
 ```
 
@@ -81,5 +82,5 @@ Outputs (created under `results/`):
 ## 📝 Citation
 If you use this repository in academic work, please cite it as:
 ```
-Your Name. Climate Change and CO₂ Level Prediction (ARIMA). GitHub repository, 2025.
+Cris Wang. Climate Change and CO₂ Level Prediction (ARIMA). GitHub repository, 2025.
 ```
